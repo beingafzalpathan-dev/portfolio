@@ -31,9 +31,8 @@ const Experience = () => {
             {experience.map((exp, index) => (
               <motion.div
                 key={exp.id}
-                className={`relative flex items-center ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
+                className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -43,9 +42,8 @@ const Experience = () => {
                 <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-primary to-secondary rounded-full border-4 border-dark z-10"></div>
 
                 {/* Content */}
-                <div className={`w-full md:w-5/12 ml-12 md:ml-0 ${
-                  index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
-                }`}>
+                <div className={`w-full md:w-5/12 ml-12 md:ml-0 ${index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
+                  }`}>
                   <Card>
                     <div className="mb-4">
                       <div className="flex items-center justify-between mb-2">
@@ -60,7 +58,7 @@ const Experience = () => {
                         {exp.company}
                       </h4>
                     </div>
-                    
+
                     <p className="text-gray-300 leading-relaxed">
                       {exp.description}
                     </p>
@@ -84,19 +82,19 @@ const Experience = () => {
             <div className="text-2xl font-bold gradient-text mb-1">4+</div>
             <div className="text-gray-400 text-sm">Years Experience</div>
           </Card>
-          
+
           <Card className="text-center">
             <div className="text-3xl mb-2">💼</div>
-            <div className="text-2xl font-bold gradient-text mb-1">4</div>
+            <div className="text-2xl font-bold gradient-text mb-1">1</div>
             <div className="text-gray-400 text-sm">Companies</div>
           </Card>
-          
+
           <Card className="text-center">
             <div className="text-3xl mb-2">🚀</div>
             <div className="text-2xl font-bold gradient-text mb-1">20+</div>
             <div className="text-gray-400 text-sm">Projects Delivered</div>
           </Card>
-          
+
           <Card className="text-center">
             <div className="text-3xl mb-2">👥</div>
             <div className="text-2xl font-bold gradient-text mb-1">10K+</div>

@@ -42,8 +42,8 @@ export const portfolioData = {
       description: "Decentralized lending platform with dynamic interest rates and collateral management on Ethereum.",
       image: "/project1.jpg",
       tags: ["Solidity", "React", "Web3.js", "DeFi"],
-      github: "https://github.com/username/defi-lending",
-      demo: "https://defi-lending-demo.vercel.app",
+      github: "",
+      demo: "",
       featured: true
     },
     {
@@ -52,8 +52,8 @@ export const portfolioData = {
       description: "Full-featured NFT marketplace with minting, trading, auctions, and creator royalties.",
       image: "/project2.jpg",
       tags: ["Solidity", "React", "IPFS", "Ethers.js"],
-      github: "https://github.com/username/nft-marketplace",
-      demo: "https://nft-marketplace-demo.vercel.app",
+      github: "",
+      demo: "",
       featured: true
     },
     {
@@ -62,8 +62,8 @@ export const portfolioData = {
       description: "Token-based voting system with proposal creation and transparent treasury management.",
       image: "/project3.jpg",
       tags: ["Solidity", "React", "Web3.js", "DAO"],
-      github: "https://github.com/username/dao-platform",
-      demo: "https://dao-platform-demo.vercel.app",
+      github: "",
+      demo: "",
       featured: false
     },
     {
@@ -72,8 +72,8 @@ export const portfolioData = {
       description: "Real-time portfolio tracking with analytics, price alerts, and multi-wallet support.",
       image: "/project4.jpg",
       tags: ["React", "Node.js", "MongoDB", "APIs"],
-      github: "https://github.com/username/crypto-tracker",
-      demo: "https://crypto-tracker-demo.vercel.app",
+      github: "",
+      demo: "",
       featured: true
     },
     {
@@ -82,8 +82,8 @@ export const portfolioData = {
       description: "Blockchain supply chain with end-to-end traceability and product verification.",
       image: "/project5.jpg",
       tags: ["Solidity", "React", "Web3.js", "Supply Chain"],
-      github: "https://github.com/username/supply-chain",
-      demo: "https://supply-chain-demo.vercel.app",
+      github: "",
+      demo: "",
       featured: false
     },
     {
@@ -92,8 +92,8 @@ export const portfolioData = {
       description: "Modern e-commerce with payment integration, inventory management, and admin dashboard.",
       image: "/project6.jpg",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com/username/ecommerce",
-      demo: "https://ecommerce-demo.vercel.app",
+      github: "",
+      demo: "",
       featured: false
     }
   ],
