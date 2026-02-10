@@ -34,7 +34,7 @@ const About = () => {
               <div className="relative">
                 <div className="w-full h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center mb-6">
                   <div className="w-64 h-64 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-6xl font-bold text-white">
-                    AJ
+                    AK
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/50 to-transparent rounded-lg"></div>
@@ -53,7 +53,7 @@ const About = () => {
               <p className="text-gray-300 text-lg leading-relaxed">
                 {about.description}
               </p>
-              
+
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <Card className="text-center">
                   <div className="text-3xl font-bold gradient-text mb-2">20+</div>
