@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FiHeart, FiGithub, FiLinkedin, FiTwitter, FiMail } from 'react-icons/fi';
+import { FaInstagram } from 'react-icons/fa';
 import { portfolioData } from '../data/portfolioData';
 
 const Footer = () => {
@@ -10,6 +11,7 @@ const Footer = () => {
     { icon: FiGithub, href: social.github, label: 'GitHub' },
     { icon: FiLinkedin, href: social.linkedin, label: 'LinkedIn' },
     { icon: FiTwitter, href: social.twitter, label: 'Twitter' },
+    { icon: FaInstagram, href: social.instagram, label: 'Instagram' },
     { icon: FiMail, href: social.email, label: 'Email' }
   ];
 
@@ -39,11 +41,11 @@ const Footer = () => {
                 {personal.name}
               </h3>
               <p className="text-gray-400 max-w-md">
-                Full Stack & Blockchain Developer passionate about creating innovative 
+                Full Stack & Blockchain Developer passionate about creating innovative
                 solutions that bridge traditional web development with decentralized technologies.
               </p>
             </div>
-            
+
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <motion.a
@@ -111,7 +113,7 @@ const Footer = () => {
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
             © {currentYear} {personal.name}. All rights reserved.
           </div>
-          
+
           <div className="flex items-center text-gray-400 text-sm">
             <span>Made with</span>
             <motion.div

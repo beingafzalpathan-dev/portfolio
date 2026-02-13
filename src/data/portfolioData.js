@@ -1,3 +1,7 @@
+import stakingProImg from '../assets/staking-pro.png';
+import profileImg from '../assets/profile-image.jpg';
+import resumePdf from '../assets/resume.pdf';
+
 export const portfolioData = {
   personal: {
     name: "Mohd Afzal Khan",
@@ -5,7 +9,8 @@ export const portfolioData = {
     email: "afzalkhanm57@email.com",
     phone: "+91 8923031670",
     location: "Noida, Sector-62",
-    resume: "/resume.pdf"
+    resume: resumePdf,
+    image: profileImg
   },
 
   hero: {
@@ -36,6 +41,16 @@ export const portfolioData = {
   ],
 
   projects: [
+    {
+      id: 0,
+      title: "Staking Pro",
+      description: "Advanced staking platform offering flexible and locked staking options with real-time rewards calculation.",
+      image: stakingProImg,
+      tags: ["Solidity", "React", "Web3.js", "DeFi"],
+      github: "https://github.com/beingafzalpathan-dev/defi-staking-dapp",
+      demo: "https://staking-dapp-beingafzalpathan.vercel.app/",
+      featured: true
+    },
     {
       id: 1,
       title: "DeFi Lending Protocol",
@@ -133,6 +148,7 @@ export const portfolioData = {
     github: "https://github.com/beingafzalpathan-dev",
     linkedin: "https://linkedin.com/in/afzal-khan-4623401b9",
     twitter: "https://x.com/being_AfzalKhan",
+    instagram: "https://www.instagram.com/beingafzalpathan",
     email: "mailto:afzalkhanm57@gmail.com"
   }
 };

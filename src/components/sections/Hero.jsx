@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FiDownload, FiGithub, FiLinkedin, FiTwitter, FiMail } from 'react-icons/fi';
+import { FaInstagram } from 'react-icons/fa';
 import { Button } from '../ui';
 import { portfolioData } from '../../data/portfolioData';
 import { fadeInUp, staggerContainer } from '../../utils/animations';
@@ -12,6 +13,7 @@ const Hero = () => {
     github: FiGithub,
     linkedin: FiLinkedin,
     twitter: FiTwitter,
+    instagram: FaInstagram,
     email: FiMail
   };
 
@@ -23,8 +25,8 @@ const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.div className="text-center" {...staggerContainer}>
-          <motion.div {...fadeInUp}>
+        <motion.div className="text-center" variants={staggerContainer} initial="initial" animate="animate">
+          <motion.div variants={fadeInUp}>
             <p className="text-lg text-gray-300 mb-4">{hero.greeting}</p>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
               <span className="gradient-text">{personal.name}</span>
@@ -32,11 +34,11 @@ const Hero = () => {
             <h2 className="text-2xl md:text-3xl text-gray-300 mb-8">{personal.title}</h2>
           </motion.div>
 
-          <motion.p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed" {...fadeInUp}>
+          <motion.p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed" variants={fadeInUp}>
             {hero.description}
           </motion.p>
 
-          <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12" {...fadeInUp}>
+          <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12" variants={fadeInUp}>
             <Button href={personal.resume} size="lg">
               <FiDownload className="mr-2" />
               Download Resume
@@ -46,10 +48,12 @@ const Hero = () => {
             </Button>
           </motion.div>
 
-          <motion.div className="flex items-center justify-center space-x-6" {...fadeInUp}>
+          <motion.div className="flex items-center justify-center space-x-6" variants={fadeInUp}>
             {Object.entries(social).map(([platform, url]) => {
               const Icon = socialIcons[platform];
-              return Icon ? (
+              if (!Icon || !url) return null;
+
+              return (
                 <motion.a
                   key={platform}
                   href={url}
@@ -60,7 +64,7 @@ const Hero = () => {
                 >
                   <Icon size={24} />
                 </motion.a>
-              ) : null;
+              );
             })}
           </motion.div>
         </motion.div>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiMail, FiPhone, FiMapPin, FiSend, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FaInstagram } from 'react-icons/fa';
 import Card from './Card';
 import Button from './Button';
 import { portfolioData } from '../data/portfolioData';
@@ -53,7 +54,8 @@ const Contact = () => {
   const socialLinks = [
     { icon: FiGithub, href: social.github, label: 'GitHub' },
     { icon: FiLinkedin, href: social.linkedin, label: 'LinkedIn' },
-    { icon: FiTwitter, href: social.twitter, label: 'Twitter' }
+    { icon: FiTwitter, href: social.twitter, label: 'Twitter' },
+    { icon: FaInstagram, href: social.instagram, label: 'Instagram' }
   ];
 
   return (
@@ -115,7 +117,7 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div>
                   <label className="block text-gray-300 text-sm font-medium mb-2">
                     Subject
@@ -130,7 +132,7 @@ const Contact = () => {
                     placeholder="Project Discussion"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-gray-300 text-sm font-medium mb-2">
                     Message
@@ -145,7 +147,7 @@ const Contact = () => {
                     placeholder="Tell me about your project..."
                   />
                 </div>
-                
+
                 <Button type="submit" size="lg" className="w-full">
                   <FiSend className="mr-2" />
                   Send Message
@@ -206,8 +208,8 @@ const Contact = () => {
               <Card>
                 <h3 className="text-xl font-bold text-white mb-4">Let's Work Together</h3>
                 <p className="text-gray-300 mb-6">
-                  I'm always interested in new opportunities and exciting projects. 
-                  Whether you need a blockchain solution, web application, or technical consultation, 
+                  I'm always interested in new opportunities and exciting projects.
+                  Whether you need a blockchain solution, web application, or technical consultation,
                   I'd love to hear from you.
                 </p>
                 <div className="flex space-x-4">
